@@ -1,0 +1,22 @@
+Simulation of Memory Allocator Module
+
+Author-	Akshay Paranjape
+Entry No-	2012PH10855
+
+libraries
+#include<iostream>
+#include <iomanip>
+
+struct :: node 
+			it has a data part and a link part
+
+function :: build_list(int n,int a[])  // build single linked list by taking data stored in array a[]
+
+functiom :: First_fit // It uses the first fit scheme of allocating memory 
+			Best_fit  // It uses the best fit scheme of allocating memory 
+			Worst_fit // It uses the worst fit scheme of allocating memory 
+
+functiion :: main()
+		// All above mentioned function are implemented in main by taking all the input given in input file
+
+
