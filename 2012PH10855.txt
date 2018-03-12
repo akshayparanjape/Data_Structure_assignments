@@ -1,0 +1,63 @@
+Stack Controller  Documentation
+
+Author-	Akshay Paranjape
+Entry No-	2012PH10855
+
+libraries
+#include<iostream>
+#include<cstring>
+
+constant Maxsize 10000
+
+class stack :: member functions IsEmpty() ,IsFull(), push(string a), pop() 
+			   member int top,int arr[Maxsize] 
+object::stack stack_c;
+
+class all_string:: // contains all the string matrix or string array used in the program
+					string rule_matrix[Maxsize][Maxsize],string look_up[Maxsize][Maxsize]
+					string input[Maxsize],string sym[Maxsize]
+					int rules_applied[Maxsize]
+object :: M;					
+
+other basic function used
+
+int get_c(string a[], string s ) // gives the position of string s in string array a
+
+int check(string a, string b)    // compare whether two string a and b are equal
+									return 1 if equal and 0 else
+
+int power(int a,int b)  		// gives the value for a power b
+
+int number(string a, int initial)  // convert string to number with the help of ASCII code
+
+string no_to_string(int number) //  convert number to the string form so as they can be pushed in stack
+
+int Rule(int i)					// process funvtion for the Rule i ie of ri
+
+main function
+
+main()  :->
+
+contains mainly four important process
+
+	1. gets the inputs of rule_matrix wherein all rules are stored in rule_matrix[Maxsize][Maxsize]
+	
+	2. gets the input of  final and non final symbols in sym[Maxsize]
+	
+	3. gets the input of look up table in look_up[Maxsize][Maxsize]
+
+	4. gets the input sequence and process it one by one by storing it input[Maxsize]
+	
+		at last perform the final_task(i)  // where i is the size of input sequence
+		
+int final_task(int n) :->		
+	variables:
+	int r,c,state; // r-row c - column to take input from lookup table ; state - state retain in lookup table
+	string to_do;  //  to_do gives task to perform
+					"pi"=push	|	"ri"=rule apply	|	"acc"= print accepted		|	"-"= rejected
+	rules are applied by using Rule(int i) function
+	
+	within this function array rules_applied stored which rules applied 
+	and then print them in reverse order using for loop
+
+-------------------------------------------------------------------------------------------------------------
