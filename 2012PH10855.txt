@@ -1,0 +1,20 @@
+Author information:
+
+Akshay Paranjape
+2012PH10855
+
+Description of the Program
+
+1)	A complete program in C++ to sort an unsorted array by calling the function search and insert 
+in the main function. 
+
+2)  Search function "int search(int a[],int n,int v,int pos)" searches a position in a sorted array
+where the value " v " can be inserted using ternery search.
+Here variable are : left,right gives the extreme position of array ;new_l,new_r which gives one third
+and two third position of the array. While loop takes the value v and compares and find the correct 
+position, initially comparing it with the rightmost element.
+ 
+3) Insert insert the value v by shifting to the right.
+
+4) main function call the above two function and sort the unsorted array.
+
